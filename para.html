@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>Hello!Atul How are you?</h1>
+<body class="dark">
+    <button class="btn"></button>
+<script>
+    let a=document.querySelectorAll("btn");
+    let b=document.getElementsByClassName("dark");
+    a.innerText="Dark Mode";
+    a.addEventListener("click",()=>{
+        b.style.backgroundColor="black";
+    });
+    
+</script>
 </body>
 </html>
