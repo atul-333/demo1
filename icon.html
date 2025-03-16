@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .iphone{
+        background-image: url(https://www.bing.com/images/search?view=detailV2&ccid=KORvvgpm&id=E0842751C20A1D755BBCFA5800EC32AF8F4C0932&thid=OIP.KORvvgpmpvNIs5AxnltBaQHaHa&mediaurl=https%3a%2f%2fm.media-amazon.com%2fimages%2fI%2f713SsA7gftL._SX679_.jpg&exph=679&expw=679&q=iphone+16+amazon&simid=608044950709748899&FORM=IRPRST&ck=905A8FC7CB52EAB611A5FD5FA1AC49C4&selectedIndex=0&itb=0);
+        height: 200px;
+        width: 150px;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    footer{
+        background-color: gray;
+        color: azure;
+        height: 300px;
+        text-align: justify;
+    }
+    .navbar{
+        height: 60px;
+        background-color: rgb(172, 162, 227);
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .icon{
+        width: 50px;
+        height: 45px;
+        margin-top: 5px;
+      font-size: 40px;
+    }
+    .border:hover{
+    border: 1px solid rgb(23, 20, 20);
+    transform: scale(1.1);
+    }
+    
+    input{
+        width: 500px;
+        height: 20px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    select{
+        height: 30px;
+        width: 50px;
+        margin-right: 5px;
+    }
+    .searchamazon{
+        margin-top: 10px;
+    }
+    .cart{
+        margin-top: 10px;
+    }
+    .order{
+        margin-top: 10px;
+    }
+    .signin{
+        margin-top: 10px;
+    }
+    .india{
+        margin-top: 10px;
+    }
+    .second{
+        height: 25px;
+        width: 100vw;
+        background-color: rgb(1, 10, 7);
+        display: flex;
+    }
+    .deals{
+       position: absolute;
+       right: 5px;
+    }
+    a{
+        color: black; 
+        text-decoration: none; 
+        margin-left: 15px;
+        
+        }
+    .image{
+        height: 230px;
+        background-size: cover;
+        background-image: url(amazon.jpg);
+    }
+    .box1{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10px;
+
+    }
+    .box2{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+
+    }
+ 
+    .one{
+        height: 300px;
+        width: 40%;
+        background-image: url(one.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        animation: im 5s ease-in 1s infinite ;
+
+    }
+        @keyframes im{
+    from{background-image: url(one.jpg);}
+    to{background-image: url(three.jpg);}
+}
+    .two{
+
+        height: 300px;
+        width: 40%;
+        background-image: url(two.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+    .three{
+
+height: 300px;
+width: 40%;
+background-image: url(three.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+
+}
+.four{
+
+height: 300px;
+width: 40%;
+background-image: url(four.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+animation: img 5s ease-in 1s infinite ;
+}
+@keyframes img{
+    from{background-image: url(four.jpg);}
+    to{background-image: url(two.jpg);}
+}
+.one:hover{
+    transform: scale(1.1);
+}
+.two:hover{
+    transform: scale(1.1);
+}
+.three:hover{
+    transform: scale(1.1);
+}
+.four:hover{
+    transform: scale(1.1);
+}
+.back{
+    margin-top: 10px;
+    background-color: rgb(24, 12, 82);
+    color:rgb(255, 213, 0);
+    display: flex;
+    justify-content: center;
+
+}
+
+.last{
+    display: flex;
+    flex-direction: column;
+}
+.last1 a{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    display: flex;
+    padding-top:50px;
+    justify-content: space-evenly;
+}
+.insta{
+    display: flex;
+    flex-direction: column;
+}
+.money{
+    display: flex;
+    flex-direction: column;
+}
+.last4{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    color: rgb(255, 213, 0);
+    margin-top: 5px;
+}
+.english{
+    background-color: rgb(205, 207, 210);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.amzonlogo{
+    width: 200px;
+    height: 50px;
+    background-image: url(amzonlogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-left: 30px;
+}
+</style>
+<body>
+    <div class="navbar">
+    <div class="icon border">
+        <i class="fa-brands fa-amazon"></i>
+</div>
+<div class="address border">
+    <p>Deliver to</p>
+    <i class="fa-solid fa-location-crosshairs"></i>
+    <div><b>India</b></div>
+</div>
+<div class="searchamazon border">
+    <select>
+        <option>All</option>
+        <option value="">Electronics</option>
+        <option value="">Smartphone</option>
+        <option value="">Appliances</option>
+        <option value="">Washing Machine</option>
+        <option value="">Fridge</option>
+    </select>
+    <input type="text" placeholder="Search Amazon" ><i class="fa-solid fa-magnifying-glass"></i>
+</div>
+<div class="india border">
+    <i class="fa-solid fa-flag"></i>
+    <select>
+        <option>IN</option>
+        <option value="">United State</option>
+        <option value="">New York</option>
+        <option value="">Bangladesh</option>
+        <option value="">Pakistan</option>
+        <option value="">Sri Lanka</option>
+    </select>
+</div>
+<div class="signin border">
+    <p>Hello,sign in</p>
+    <p><b>Accounts & Lists</b></p>
+</div>
+<div class="order border">
+    <p>Returns</p>
+    <p><b>& Order</b></p>
+</div>
+<div class="cart border">
+    <i class="fa-solid fa-cart-shopping"></i>
+
+</div>
+</div>
+<div class="second">
+  <button class="menu" >
+ <i class="fa-solid fa-bars"></i></button> 
+
+  <p style="color: rgb(255, 213, 0);"><b>All</b></p>
+  <div class="deals">
+    <p><b>Shop deals in Electronics</b></p>
+</div>
+<div class="anchor">
+        <a href="#"><b>Today's Deals</b></a>
+        <a href="#"><b>Customer Service</b></a>
+        <a href="#"><b>Registry</b></a>
+        <a href="#"><b>Gift Cards</b></a>
+        <a href="#"><b>Sell</b></a>
+</div>
+    
+</div>
+<div class="image">
+</div>
+<div class="box1">
+    <div class="one"></div>
+    <div class="two"></div>
+</div>
+    <div class="box2">
+    <div class="three"></div>
+    <div class="four"></div>
+</div>
+<div class="back">
+    <b>Back to Top</p>
+</div>
+<footer>
+    <div class="last">
+      <p style="margin-left: 15px;"><b>Get To Know Us</b></p>
+      <div class="last1">
+      <a href=""></a>
+      <a href="">
+About Amazon
+      </a>
+      <a href="">
+Careers
+      </a>
+      
+      <a href="">
+Press Release
+      </a>
+      <a href="">
+        Amazon Science
+      </a>
+    </div>
+
+    </div>
+    <div class="last2">
+        <div class="connect">
+            <p style="margin-left: 15px;"><b>Connect With Us</b></p>
+        </div>
+        <div class="insta">
+            <a>Instagram</a>
+            <a>Facebook</a>
+            <a>Twitter</a>
+        </div>
+        
+    </div>
+    <div class="last3">
+        <p style="margin-left: 15px;"><b>Make Money With Us</b></p>
+        <div class="money">
+          <a>Sell On Amazon</a>
+          <a> Supply To Amazon</a>
+          <a>Become an Affilate</a>
+          <a>Amazon Pay Merchant</a>
+          <a>Fulfillment By Amazon</a>
+          <a>Advertise Your Product</a>
+        </div>
+    </div>
+    <div class="help">
+        <p style="margin-left: 15px;"><b>Let Us Help You</b></p>
+        <div class="last4">
+            <a>Your Accounts</a>
+            <a>Return Centre</a>
+            <a>100% Purchase Protection</a>
+            <a>Amazon App Download</a>
+            <a> Help</a>
+        </div>
+    </div>
+</footer>
+<div class="english">
+<div class="amzonlogo"></div>
+</div>
+<div class="iphone">
+
+</div>
+
+</body>
+</html>
